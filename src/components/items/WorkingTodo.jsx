@@ -3,6 +3,16 @@ import styled from 'styled-components';
 import TodoCard from './TodoCard';
 
 export default function WorkingTodo() {
+
+  return (
+    <Todos>
+      <Legend>Working</Legend>
+      <TodoCard cardtitle='할일제목' cardcontent='할일내용'></TodoCard>
+      <TodoCard cardtitle='할일제목' cardcontent='할일내용'></TodoCard>
+      <TodoCard cardtitle='할일제목' cardcontent='할일내용'></TodoCard>
+    </Todos>
+  );
+}
   const Todos = styled.fieldset`
     width: 97%;
     display: flex;
@@ -18,12 +28,3 @@ export default function WorkingTodo() {
     font-size: 50px;
     font-weight: 800;
   `;
-  return (
-    <Todos>
-      <Legend>Working</Legend>
-      <TodoCard cardtitle='할일제목' cardcontent='할일내용'></TodoCard>
-      <TodoCard cardtitle='할일제목' cardcontent='할일내용'></TodoCard>
-      <TodoCard cardtitle='할일제목' cardcontent='할일내용'></TodoCard>
-    </Todos>
-  );
-}
